@@ -6,8 +6,8 @@
 .contact__text,
 .contact__title {
   background: var(--azul-degrade);
-  .webkit-background.clip: text;
-  .webkit-text-fill-color: transparent;
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
@@ -32,7 +32,7 @@
 .contact__email::placeholder {
   font-family: var(--fonte-principal);
   color: var(--azul);
-  background: url('../assets/icons/Pesquisa.svg') no-repeat;
+  background: url('../assets/icons/Email.svg') no-repeat;
   padding-left: 2em;
 }
 
