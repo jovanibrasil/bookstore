@@ -3,6 +3,7 @@
   height: 24px;
   background-image: url(../assets/Menu.svg);
   background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
 }
 
@@ -29,6 +30,10 @@
   position: absolute;
   top: 100%;
   width: 60vw;
+}
+
+.container__botao {
+  display: none;
 }
 
 .container__botao:checked~.lista-menu {
@@ -62,10 +67,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .container__link__description {
-    display: block;
-  }
-
   .container__titulo
   .container__alura--negrito {
     font-size: 30px;
@@ -108,6 +109,10 @@
 }
 
 @media screen and (min-width: 1728px) {
+  .container__link__description {
+    display: block;
+  }
+
   .container__link {
     display: flex;
     align-items: center;
