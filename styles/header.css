@@ -56,11 +56,16 @@
 
 .opcoes,                   
 .opcoes__botao,
+.container__link__description,
 .container__titulo {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
+  .container__link__description {
+    display: block;
+  }
+
   .container__titulo
   .container__alura--negrito {
     font-size: 30px;
@@ -99,5 +104,18 @@
   .opcoes__botao:checked~.lista-menu {
     display: block;
     width: auto;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .container__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+  }
+
+  .cabecalho {
+    padding: 0.2em;
   }
 }
